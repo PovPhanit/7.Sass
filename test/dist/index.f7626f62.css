@@ -1,0 +1,206 @@
+h1 {
+  color: #3333fe;
+}
+
+.container h3 {
+  color: #f46262;
+}
+
+.text-blue {
+  color: #00f;
+}
+
+.text-blue-1 {
+  background-color: #00f;
+}
+
+.texts-blue-1 {
+  background-color: #f46262;
+}
+
+.text-blue-2 {
+  background-color: #00f;
+}
+
+.texts-blue-2 {
+  color: #fff;
+  background-color: #0ff;
+}
+
+.text-blue-3 {
+  background-color: #00f;
+}
+
+.texts-blue-3 {
+  background-color: #f46262;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-red-1 {
+  background-color: red;
+}
+
+.texts-red-1 {
+  background-color: #f46262;
+}
+
+.text-red-2 {
+  background-color: red;
+}
+
+.texts-red-2 {
+  color: #fff;
+  background-color: #0ff;
+}
+
+.text-red-3 {
+  background-color: red;
+}
+
+.texts-red-3 {
+  background-color: #f46262;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-green-1 {
+  background-color: green;
+}
+
+.texts-green-1 {
+  background-color: #f46262;
+}
+
+.text-green-2 {
+  background-color: green;
+}
+
+.texts-green-2 {
+  color: #fff;
+  background-color: #0ff;
+}
+
+.text-green-3 {
+  background-color: green;
+}
+
+.texts-green-3 {
+  background-color: #f46262;
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #0f0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  box-shadow: 2px 2px 5px #8d7c7c80;
+}
+
+.button1, .button3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #00f;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  box-shadow: 2px 2px 5px #8d7c7c80;
+}
+
+.button2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  box-shadow: 2px 2px 5px #8d7c7c80;
+}
+
+.function {
+  color: #33f;
+}
+
+@media (width <= 1200px) {
+  .responsive {
+    background-color: #0f0;
+  }
+}
+
+@media (width <= 960px) {
+  .responsive {
+    background-color: #00f;
+  }
+}
+
+@media (width <= 720px) {
+  .responsive {
+    background-color: #0ff;
+  }
+}
+
+@media (width <= 480px) {
+  .responsive {
+    background-color: orange;
+  }
+}
+
+.button3 {
+  color: red;
+}
+
+.card {
+  color: #fff;
+  background-color: #938d8d;
+  width: 500px;
+  height: 600px;
+  display: block;
+}
+
+.card .header {
+  background-color: #adff2f;
+  width: 100%;
+  height: 400px;
+}
+
+.card .body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.card .body .title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: red;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  margin-top: -30px;
+  font-size: 24px;
+  display: flex;
+}
+
+.card .body .description {
+  margin-top: -10px;
+}
+
+/*# sourceMappingURL=index.f7626f62.css.map */

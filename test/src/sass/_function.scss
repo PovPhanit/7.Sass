@@ -1,0 +1,11 @@
+@function buttons(){
+    $color:red;
+    $newColor: lighten($color,10%);
+    @return $newColor;
+}
+
+@function buttonss($newColors){
+    $color:$newColors;
+    $newColor: lighten($color,10%);
+    @return $newColor;
+}

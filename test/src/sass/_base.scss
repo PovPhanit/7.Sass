@@ -1,0 +1,107 @@
+h1{
+    color: $primary;
+}
+.container{
+    h3{
+        color: $error;
+    }
+}
+
+//loop each
+@each $key,$var in $color{
+    .text-#{$key}{
+        color: $var;
+    }
+    @for $i from 1 through 3{
+        .text-#{$key}-#{$i}{
+            background-color: $var;
+        }
+        @if(($i%2)!=0 or $i==1){
+            .texts-#{$key}-#{$i}{
+                background-color:$error;
+            }
+        }
+        @if(($i%2)==0){
+            .texts-#{$key}-#{$i}{
+                background-color:complement($color:red);
+                color: lighten($color: white, $amount: 20%);
+            }
+        }
+    }
+}
+//and /  or   : logical operator
+
+
+
+//maxin
+@mixin btn(){
+    background-color:lime;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 30px;
+    box-shadow: 2px 2px 5px rgba(141, 124, 124, 0.502);
+}
+
+@mixin btns($bg,$text-color){
+    background-color:$bg;
+    color:$text-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 30px;
+    box-shadow: 2px 2px 5px rgba(141, 124, 124, 0.502);
+}
+
+.button{
+    @include btn();
+}
+.button1{
+    @include btns(blue,white);
+}
+.button2{
+    @include btns(orange,white);
+}
+
+.function{
+    color: buttonss(blue);
+}
+
+
+
+
+//responsive
+.responsive{
+    @include xl{
+        background-color: lime;
+    }
+}
+.responsive{
+    @include lg{
+        background-color: blue;
+    }
+}
+.responsive{
+    @include md{
+        background-color:cyan;
+    }
+}
+.responsive{
+    @include sm{
+        background-color:orange;
+    }
+}
+
+//@extend .classname; : for take other css
+//@extend %name; : take css that you create
+.button3{
+    // @include btn();
+    @extend .button1;
+    color: map-get($color,'red');
+    // color:red
+}

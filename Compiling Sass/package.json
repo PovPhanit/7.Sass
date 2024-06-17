@@ -1,0 +1,19 @@
+{
+  "name": "compiling-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Phanit",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.6"
+  },
+  "dependencies": {
+    "parcel": "^2.10.3"
+  }
+}

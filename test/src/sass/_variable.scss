@@ -1,0 +1,24 @@
+
+//color
+$primary:rgb(51, 51, 254);
+$secondary:rgb(86, 245, 86);
+$error: rgb(244, 98, 98);
+$white:white;
+
+
+//spacing
+$base-padding:0.7rem;
+$base-margin:0.7rem;
+
+
+//color 
+$color : (
+    "blue":blue,
+    "red": red,
+    "green": green,
+);
+
+@debug map-get($color,"blue");
+@debug map-has-key($color,"blue");
+@debug map-merge($color,"blue");
+
